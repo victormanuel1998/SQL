@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUpdate">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_menu_camera"
+        android:id="@+id/civImage"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Ingrese nombre del producto"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etProductName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etProductName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Marca"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etBrand"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBrand"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Modelo"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etModel"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etModel"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Número de serie"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etSerialNumber"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSerialNumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Precio"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etPrice"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPrice"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textCapWords"
+        android:hint="Descripción"
+        android:maxLines="5"
+        android:background="@drawable/shape_rectangle"
+        android:padding="8dp"
+        android:id="@+id/etDescription"
+        />
+
+    <EditText
+        android:id="@+id/etTELEFONO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPrice"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="TELEFONO"
+        android:inputType="textCapWords"
+        android:maxLines="5"
+        android:padding="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_baseline_save_24"
+        android:id="@+id/fabSave"
+        />
+
+</RelativeLayout>
